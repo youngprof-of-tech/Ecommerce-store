@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - Norland | product website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="images/Norland-Nigeria-Logo-Retina-2-1.png"
+            width="150px"
+            alt=""
+          />
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="blog1.html">Join Norland</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">Order</a></li>
+          </ul>
+        </nav>
+        <ion-icon name="cart-outline" width="40px" height="40px"></ion-icon>
+        <ion-icon
+          name="menu-outline"
+          class="menu-icon"
+          onclick="menutoggle()"
+        ></ion-icon>
+      </div>
+    </div>
+
+    <!--featured products-->
+    <section class="products">
+      <div class="small-container">
+        <div class="row row-2">
+          <h2>All Products</h2>
+          <select>
+            <option value="default">Default Sorting</option>
+            <option value="price">Sort by Price</option>
+            <option value="popularity">Sort by Popularity</option>
+            <option value="rating">Sort by rating</option>
+            <option value="sale">Sort by Sale</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <a href="productdetails.html#first-image"
+              ><img src="images/down2.jpg" height="235px" alt=""
+            /></a>
+
+            <h4>Health Pad Female(14pcs /box)</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#22,200</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#second-image"
+              ><img
+                src="images/download (1).jpg"
+                alt="Nouripad anion Sanitary image"
+            /></a>
+            <h4>Nouripad Anion Sanitary</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#2,400</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#third-image"
+              ><img
+                src="images/Immune-vital-capsules.jpg"
+                alt="Immune-Vital-Capsules Image"
+            /></a>
+            <h4>Immune Vital capsule</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#18,000</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#fourth-image"
+              ><img
+                src="images/vision-vitale-caps.jpg"
+                alt="Vision-Vitale-Capsule Image"
+            /></a>
+            <h4>Immune Vision Vital capsule</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#18,000</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <a href="productdetails.html#fifth-image"
+              ><img
+                src="images/Toothpaste-Norland-2.jpg"
+                height="235px"
+                alt="Norland Herbal Toothpaste Image"
+            /></a>
+            <h4>Norland Herbal Toothpaste</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#2,160</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#sixth-image"
+              ><img
+                src="images/Natural-B-Carotene-Capsule.jpg"
+                alt="Natural-B-Carotene-Capsule Image"
+            /></a>
+            <h4>Natural-B-Carotene-Capsule</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#15,000</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#seventh-image">
+              <img
+                src="images/wrfwlwxybk1.jpg"
+                height="230px"
+                alt="Kuding tea Image"
+            /></a>
+            <h4>Kuding Tea</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#5,040</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#eight-image">
+              <img
+                src="images/MyImage1606120285708Image.jpg"
+                alt="Healthway Cordyceps Coffee image"
+            /></a>
+            <h4>Healthway Cordyceps Coffee</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#6,120</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <a href="productdetails.html#nineth-image"
+              ><img
+                src="images/calcium-powder.jpg"
+                height="235px"
+                alt="calcium-Powder image"
+            /></a>
+            <h4>Nutrient calcium-Powder</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#13,200</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#last-image"
+              ><img
+                src="images/1rt9thu3lvy9.jpg"
+                alt="sunlit body lotion image"
+            /></a>
+            <h4>Sunlit Body Lotion</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#4,200</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#eleven-image"
+              ><img
+                src="images/pad.jpg"
+                height=""
+                alt="anion Sanitary pad image"
+            /></a>
+            <h4>Anion Sanitary Pad</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#2,400</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#twelve-image"
+              ><img
+                src="images/IMG-20210303-WA0023.jpg"
+                alt="energy Bracelet image"
+            /></a>
+            <h4>Energy Bracelet</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#36,600</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#thirteen-image"
+              ><img
+                src="images/Norland-Mebo-GI-Vital-Softgel.png"
+                alt="Norland-Mebo-GI-Vital-Softgel image"
+            /></a>
+            <h4>Gi Vital Softgel</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#21,000</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#fourtheen-image"
+              ><img
+                src="images/ginseng.jpg"
+                alt="Ginseng Cordyceps Sinensis image"
+            /></a>
+            <h4>Ginseng Cordyceps Sinensis</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#21,000</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#fiftheen-image"
+              ><img
+                src="images/Norland-Sunlit-Liquid-Detergent.jpg"
+                height="200px"
+                alt="Norland-Sunlit-Liquid-Detergent image"
+            /></a>
+            <h4>Sunlit anti-bacterial washing liquid</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>#4,200</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#sixteen-image"
+              ><img
+                src="images/hypo.jpg"
+                height="200px"
+                alt="Hypoglycemic capsule image"
+            /></a>
+            <h4>Hypoglycemic Capsule</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p>#19,200</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#seventheen-image">
+              <img
+                src="images/tit.jpg"
+                height="250px"
+                alt="Titanium Magic Frying pan image"
+            /></a>
+
+            <h4>Titanium Magic Frying Pan</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p>#66,000</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#eighteen-image"
+              ><img
+                src="images/Healthway-Alkaline-Cup-Frankev.jpg"
+                height=""
+                alt=""
+            /></a>
+
+            <h4>Health Way Cup</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p>#33,000</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#ninetheen-image">
+              <img
+                src="images/micro.jpg"
+                height=""
+                alt="micro Molecule peptide image"
+            /></a>
+            <h4>Micro Molecule Peptide</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p>#23,400</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#twenty-image"
+              ><img src="images/male (2).jpg" height="260px" alt="health pad
+              male image" /</a
+            >
+            <h4>Health Pad (Male 14pcs/box)</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p>#22,200</p>
+          </div>
+          <div class="col-4">
+            <a href="productdetails.html#twentyone-image"
+              ><img src="images/DETOX-PACK.webp" height="260px" alt="health pad
+              male image" /</a
+            >
+            <h4>DETOX-PACK (1 set)</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p>#390,000</p>
+          </div>
+        </div>
+        <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>&#8594;</span>
+        </div>
+      </div>
+    </section>
+    <!--testimoial section-->
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Purchase this Products</h3>
+            <p>This products can easily be purchase through whatsapp.</p>
+          </div>
+          <div class="footer-col-2">
+            <img
+              src="images/Norland-Nigeria-Logo-Retina-2-1.png"
+              width="150px"
+              alt=" Norland logo image"
+            />
+            <p>Make sure you make payment before contacting on whatsapp.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Order</li>
+              <li>Pay Now</li>
+              <li>Products</li>
+              <li>Home</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright&copy; 2022 - Bezaleeloftech</p>
+      </div>
+    </div>
+    <!--Js for toggle menu-->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
